@@ -44,7 +44,7 @@ class ContactForm extends React.Component {
           Name*
         </label>
         <input
-          className="mb-8 p-4 border rounded-lg border-gray-200 w-full"
+          className="transition focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent mb-8 p-4 border rounded-lg border-gray-200 w-full"
           id="first_name"
           type="text"
           name="first_name"
@@ -54,7 +54,7 @@ class ContactForm extends React.Component {
           E-mail*
         </label>
         <input
-          className="mb-8 p-4 border rounded-lg border-gray-200 w-full"
+          className="transition focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent mb-8 p-4 border rounded-lg border-gray-200 w-full"
           id="get_email"
           type="email"
           name="get_email"
@@ -64,7 +64,7 @@ class ContactForm extends React.Component {
           Telefon*
         </label>
         <input
-          className="mb-8 p-4 border rounded-lg border-gray-200 w-full"
+          className="transition focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent mb-8 p-4 border rounded-lg border-gray-200 w-full"
           id="phone_number"
           type="tel"
           name="phone_number"
@@ -74,7 +74,7 @@ class ContactForm extends React.Component {
           Vælg service*
         </label>
         <select
-          className="mb-8 p-4 border rounded-lg border-gray-200 w-full"
+          className="transition focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent mb-8 p-4 border rounded-lg border-gray-200 w-full"
           value={this.state.value}
           onChange={this.handleChange}
           id="service_needed"
@@ -109,13 +109,13 @@ class ContactForm extends React.Component {
           Opgavebeskrivelse*
         </label>
         <textarea
-          className="mb-8 pt-4 pl-4 pr-4 pb-12 border rounded-lg border-gray-200 w-full"
+          className="transition focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent mb-8 pt-4 pl-4 pr-4 pb-12 border rounded-lg border-gray-200 w-full"
           id="your_challenge"
           name="your_challenge"
           placeholder="Giv en kort beskrivelse af din opgave"
         />
         <button
-          className="mb-6 bg-green-400 text-black-800 text-xl pl-12 pr-12 pt-4 pb-4 text-white rounded-xl"
+          className="transition hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-opacity-100 mb-6 bg-green-500 text-black-800 text-xl pl-12 pr-12 pt-4 pb-4 text-white rounded-xl"
           type="submit"
         >
           Få 3 tilbud - gratis & uforpligtende
