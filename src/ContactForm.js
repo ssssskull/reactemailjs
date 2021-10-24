@@ -24,13 +24,17 @@ class ContactForm extends React.Component {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          alert(`Your message has been sent`);
         },
         (error) => {
-          console.log(error.text);
+          console.log(
+            `There was an error sending the message! Error code: ${error.text}`
+          );
         }
       );
-    e.target.reset();
+    setTimeout(() => {
+      e.target.reset();
+    }, 2000);
   }
 
   render() {
