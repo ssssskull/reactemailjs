@@ -13,7 +13,6 @@ class ContactForm extends React.Component {
   }
 
   sendEmail(e) {
-    console.log(e.target.elements);
     e.preventDefault();
 
     emailjs
